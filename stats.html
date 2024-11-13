@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapped Now</title>
+    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="./resources/scripts/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./resources/scripts/stats.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="main.html" class="logo-link">
+                <img src="resources/logo.png" alt="Logo" class="logo">
+                <h2>&nbsp;Wrapped Now</h2>
+            </a>
+            <nav class="header-navigation">
+                <a href="index.php">Home</a>
+                <a href="settings.html">Settings</a>
+                <a href="stats.html">Stats</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </nav>
+        </div>
+    </header>
+    <div class="chart">
+        <h2>Top 50 Songs for the Last Year</h2>
+
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Song Name</th>
+                <th>Artist Name</th>
+            </tr>
+        </table>
+
+        <!-- <script>
+            // Simple JavaScript to add rows to the table
+            const table = document.querySelector('table');
+
+            for (let i = 1; i <= 50; i++) {
+                const row = table.insertRow();
+                const cell1 = row.insertCell(0);
+                const cell2 = row.insertCell(1);
+                const cell3 = row.insertCell(2);
+
+                cell1.textContent = i;
+                cell2.textContent = `Song ${i}`; // Placeholder for song name
+                cell3.textContent = `Artist ${i}`; // Placeholder for artist name
+            }
+        </script> -->
+    </div>
+</body>
+
+
+</html>

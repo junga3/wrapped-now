@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrapped Now</title>
+  <link rel="stylesheet" href="./resources/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <script type="text/javascript" src="./resources/scripts/jquery-3.6.1.min.js"></script>
+  <!-- this javascript allows for a color wheel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.5.2/jscolor.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script type="text/javascript" src="./resources/scripts/settings.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a href="#" class="logo-link">
+        <img src="resources/logo.png" alt="Logo" class="logo">
+        <h2>&nbsp;Wrapped Now</h2>
+      </a>
+      <nav class="header-navigation">
+        <a href="index.php">Home</a>
+        <a href="settings.html">Settings</a>
+        <a href="stats.html">Stats</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+  <div class="main-content">
+
+    <div class="wrapper">
+
+      <div class="settings">
+        <h1>Wrapped Now</h1>
+        <h2>Settings</h2>
+        <p class="description">You can change the color of the graphic and the length of time used for top items.</p>
+        <div class="color_headers">
+          <h2 class="tagline" for="color_input">Background Color:</h2>
+          <h2 class="tagline" for="color_input">Text Color:</h2>
+        </div>
+        <div class="color_pickers">
+          <input style="width:100px;" class="jscolor {width:243, height:100, position:'right',
+          borderColor:'#FFF', insetColor:'#FFF', backgroundColor:'#666'}" id="bgcolor" name="bgcolor" value="#6dddc1" />
+          <input style="width:100px;" class="jscolor {width:243, height:150, position:'right',
+            borderColor:'#FFF', insetColor:'#FFF', backgroundColor:'#666'}" id="textcolor" name="bgcolor"
+            value="#000000" />
+        </div>
+        <h2 class="tagline" for="time_range">Listening History:</h2>
+        <select className="dropdown" id="time_range">
+          <option value="short_term">Last month</option>
+          <option value="medium_term">Last 6 months</option>
+          <option value="long_term">Last year</option>
+        </select>
+  
+        <div class="top_info">
+          <div class="header-row">
+            <h2 class="tagline" for="data_type">Data Type</h2>
+          </div>
+          <div class="input-row">
+            <select id="data_type">
+              <option value="track">Top Tracks</option>
+              <option value="artist">Top Artists</option>
+              <option value="genre">Top Genres</option>
+              <option value="album">Top Albums</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="buttons">
+          <button id="go"> Go</button>
+        </div>  
+        
+      </div>
+  
+  
+      <div class="summary" id="toDownload">
+        <h2 id="username"></h2>
+        <h3 id="top-title"></h3>
+        <img id="user-photo"></img>
+  
+        <div class="top-content">
+          <h3 id="data-title"></h3>
+          <ol id="data">
+          </ol>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <p>Created by ITWS Team 20 <a href="https://github.com/RPI-ITWS/ITWS1100-S24-team20">Github</a></p>
+</footer>
+
+</html>
