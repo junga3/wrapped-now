@@ -1,4 +1,6 @@
-# ITWS1100-S24-team20
+# Wrapped Now
+
+Main purpose is to allow spotify users to see both their top aritst and their top songs for a time frame speceified.
 
 ### Resources
 - [Project Proposal](https://docs.google.com/document/d/1R9GRsE4af2BaYHSbtxiSl9vEsEOXKbFJkKmVF18XsJk/edit?usp=sharing)
